@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+body {
+  background: #F5F6FA;
+}
+
+select {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+input {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
