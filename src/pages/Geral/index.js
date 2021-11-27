@@ -1,12 +1,12 @@
 import React from "react"
-import Menu from '../../components/Menu'
+import Header from '../../components/Header'
 import "./style.scss";
 
 const Geral = () => {
 
   return (
     <>
-      <Menu/>
+      <Header page="Visão Geral"/>
     </>
   );
 };

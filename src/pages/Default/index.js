@@ -1,4 +1,4 @@
-import Menu from '../../components/Menu'
+import Header from '../../components/Header'
 
 import "./style.scss";
 
@@ -6,7 +6,7 @@ const Default = () => {
 
   return (
     <>
-    <Menu/>
+    <Header/>
       Sem tela
     </>
   );

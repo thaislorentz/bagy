@@ -5,15 +5,21 @@ import logo from '../../assets/logo.svg';
 
 import './style.scss';
 
-const Menu = () => {
+const Menu = ({id = 'menu', showMenu = false, onClose}) => {
+  const handleOutSideClick = (e) => {
+    if (e.target.id === id) {
+      onClose();
+      console.log('aqui')
+    }
+  }
   return (
-    <nav className='menu active'>
+    <nav id={id} className={showMenu ? 'menu active' : 'menu'} onClick={handleOutSideClick}>
       <ul className="menu-items">
           <img src={logo} className="menu-logo" alt="logo" />
 
         {MenuData.map((item, index) => {
           return (
-            <li key={index} className="menu-options">
+            <li onClick={() => onClose()} key={index} className="menu-options">
               <NavLink to={item.path} activeClassName="selected">
                 <span className="menu-icon">{item.icon}</span>
                 <span className="menu-label">{item.name}</span>
