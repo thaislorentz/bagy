@@ -15,6 +15,7 @@
     color: #9FA2B4;
     font-weight: bold;
     font-size: 14px;
+    margin-bottom: 10px;
   }
 
   &-data {
@@ -27,5 +28,11 @@
   color: #FC3C8D;  
   &-title {
     color: #FC3C8D;  
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    padding: 10px;
   }
 }
