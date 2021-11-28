@@ -9,7 +9,6 @@ const Menu = ({id = 'menu', showMenu = false, onClose}) => {
   const handleOutSideClick = (e) => {
     if (e.target.id === id) {
       onClose();
-      console.log('aqui')
     }
   }
   return (
@@ -20,7 +19,7 @@ const Menu = ({id = 'menu', showMenu = false, onClose}) => {
         {MenuData.map((item, index) => {
           return (
             <li onClick={() => onClose()} key={index} className="menu-options">
-              <NavLink to={item.path} activeClassName="selected">
+              <NavLink exact to={item.path} activeClassName="selected">
                 <span className="menu-icon">{item.icon}</span>
                 <span className="menu-label">{item.name}</span>
               </NavLink>

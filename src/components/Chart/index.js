@@ -18,6 +18,9 @@ const Chart = () => {
     chart: {
       height: 350,
       type: 'line',
+      toolbar: {
+        show: false,
+      },
     },
     stroke: {
       curve: 'smooth'

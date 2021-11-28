@@ -1,4 +1,6 @@
-import { FaChartPie, FaTicketAlt, FaLightbulb} from 'react-icons/fa'
+import { FaChartPie, FaTicketAlt, FaLightbulb, FaBook, FaUserTie} from 'react-icons/fa'
+import { IoMdSettings, IoIosRibbon} from 'react-icons/io'
+import { BsFillPeopleFill} from 'react-icons/bs'
 
 export const MenuData = [
     {
@@ -19,27 +21,27 @@ export const MenuData = [
     },
     {
       name: 'Clientes',
-      icon: <FaChartPie size={12} />,
+      icon: <BsFillPeopleFill size={12} />,
       path: '/clientes'
     },
     {
       name: 'Produtos',
-      icon: <FaChartPie size={12} />,
+      icon: <FaUserTie size={12} />,
       path: '/produtos'
     },
     {
       name: 'Planos e Metas',
-      icon: <FaChartPie size={12} />,
+      icon: <FaBook size={12} />,
       path: '/planos-metas'
     },
     {
       name: 'Configurações',
-      icon: <FaChartPie size={12} />,
+      icon: <IoMdSettings size={12} />,
       path: '/configuracoes'
     },
     {
       name: 'Sair',
-      icon: <FaChartPie size={12} />,
+      icon: <IoIosRibbon size={12} />,
       path: '/sair'
     }
   ]
